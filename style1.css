@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background: blueviolet;
+	padding: 20px;
+}
+.wrapper {
+	width: 1000px;
+	margin: 5% auto 0;
+}
+.gallery {
+	column-count: 3;
+	column-gap: 10px;
+}
+.gallery-item {
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+.gallery-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+@media (max-width: 900px) {
+	.wrapper {
+		width: 100%;
+	}
+	.gallery {
+		column-count: 2;
+	}
+}
+@media (max-width: 480px) {
+	.gallery {
+		column-count: 1;
+	}
+}
+
